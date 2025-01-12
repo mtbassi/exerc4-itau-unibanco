@@ -41,11 +41,11 @@ services:
       - springboot-itau-unibanco-net
 
   app:
-    image: exerc5-itau-unibanco-image
+    image: exerc4-itau-unibanco-image
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: exerc5-itau-unibanco
+    container_name: exerc4-itau-unibanco
     depends_on:
       rabbitmq:
         condition: service_healthy

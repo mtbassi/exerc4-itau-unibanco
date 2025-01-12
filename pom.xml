@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>bassi.itau-unibanco</groupId>
-    <artifactId>exerc5-itau-unibanco</artifactId>
+    <artifactId>exerc4-itau-unibanco</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>exerc5-itau-unibanco</name>
-    <description>Exercício 5</description>
+    <name>exerc4-itau-unibanco</name>
+    <description>Exercício 4</description>
     <url/>
     <licenses>
         <license/>
