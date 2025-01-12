@@ -26,6 +26,9 @@ Este repositório contém a implementação de um microsserviço desenvolvido em
 - Consumidor para ler mensagens da fila e registrar logs.
 - Configuração para execução em **AWS ECS** ou **AWS Lambda**.
 
+### Exercício 4: Princípios SOLID
+- Refatoração para aderir aos princípios SOLID com explicações no código.
+  
 ### Exercício 5: Banco de Dados e Filtros
 - Integração com banco de dados **MySQL** utilizando **Flyway**.
 - ndpoint para buscar produtos com filtros (nome, categoria, preço).
