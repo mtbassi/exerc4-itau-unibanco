@@ -12,8 +12,13 @@ import jakarta.validation.constraints.NotNull;
 
 import java.math.BigDecimal;
 
+// Define que a nomenclatura das propriedades no JSON segue o padrão snake_case.
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
+// Segue o SRP ao permitir que a classe lide apenas com a deserialização,
+// ignorando propriedades extras no JSON, sem impactar sua funcionalidade.
 @JsonIgnoreProperties(ignoreUnknown = true)
+// Aplica o Princípio da Responsabilidade Única (SRP) ao se limitar
+// a representar e validar os dados de entrada de produtos.
 public record ProdutoRequest(
         @NotBlank
         String nome,

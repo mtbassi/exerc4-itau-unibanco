@@ -19,6 +19,17 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
 
+/*
+ * Aderência aos princípios SOLID:
+ *
+ * Possui responsabilidade única, que é lidar com as requisições da API e interagir com o serviço. Toda a lógica de negócios, como consultar, cadastrar, atualizar e excluir produtos, é delegada para a camada de serviço (`ProdutoService`).
+ * O controlador não contém lógica de negócio, apenas faz a intermediação entre as requisições HTTP e a lógica de negócio.
+ *
+ * A classe `ProdutoController` segue o ISP ao fornecer métodos específicos para operações distintas (listar, cadastrar, atualizar, deletar), sem forçar o uso de métodos irrelevantes. Cada método tem um propósito claro e não impõe funcionalidades que não são necessárias em outros cenários.
+ *
+ * A dependência da `ProdutoService` é injetada via o construtor, garantindo que o controlador não esteja diretamente acoplado a uma implementação específica do serviço.
+ * Isso permite que o controlador seja facilmente testado com mocks ou stubs, além de promover maior flexibilidade.
+ */
 @RestController
 @RequestMapping("/v1/produto")
 @RequiredArgsConstructor

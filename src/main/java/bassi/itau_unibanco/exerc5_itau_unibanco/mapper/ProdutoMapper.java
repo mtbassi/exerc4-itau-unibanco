@@ -7,6 +7,14 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
 
+/**
+ * Interface responsável por mapear objetos entre ProdutoRequest, ProdutoEntity e ProdutoResponse.
+ *
+ * Segue o princípio SRP ao centralizar a lógica de conversão, promovendo organização
+ * e separação de responsabilidades.
+ *
+ * Usa o MapStruct para geração automática de código eficiente em tempo de compilação.
+ */
 @Mapper(componentModel = "spring")
 public interface ProdutoMapper {
 

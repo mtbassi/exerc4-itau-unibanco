@@ -15,6 +15,15 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * Classe de serviço responsável pelas operações de negócio relacionadas a produtos.
+ * <p>
+ * Segue o princípio SRP (Single Responsibility Principle) ao manter uma única responsabilidade:
+ * gerenciar a lógica de negócios do domínio de produtos.
+ * <p>
+ * As dependências injetadas respeitam o DIP (Dependency Inversion Principle), permitindo
+ * desacoplamento e facilidade para testes unitários ou substituições de implementação.
+ */
 @Service
 @RequiredArgsConstructor
 public class ProdutoService {
